@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Nolan Muay Thai</title>
+  <meta name="description" content="Photos and videos from Nolan Muay Thai — training sessions, fights, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="./" class="nav-logo"><img src="./images/logo.png" alt="Nolan Muay Thai"></a>
+      <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="./">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./coaches.html">Coaches</a></li>
+        <li><a href="./junior-muay-thai.html">Junior Muay Thai</a></li>
+        <li><a href="./sign-up.html">Sign Up</a></li>
+        <li><a href="./gallery.html" class="active">Gallery</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <h1>Gallery</h1>
+    <p>Photos &amp; Videos</p>
+  </section>
+
+  <!-- PHOTOS -->
+  <section class="section-dark">
+    <div class="container">
+      <h2 class="section-title">Photos</h2>
+      <div class="gallery-grid">
+        <img src="./images/hero-bg.jpg" alt="Victory celebration in the ring">
+        <img src="./images/about-fighter.jpg" alt="Liam Nolan with championship belts">
+        <img src="./images/liam-portrait.jpg" alt="Liam Nolan portrait">
+        <img src="./images/liam-ali-aliev.jpg" alt="Liam Nolan vs Ali Aliev — ONE Championship">
+        <img src="./images/liam-eddie-abasolo.jpg" alt="Liam Nolan vs Eddie Abasolo">
+        <img src="./images/whatsapp-20250226-1216.jpg" alt="Fighter in the ring corner">
+        <img src="./images/training-group.jpg" alt="Group training session">
+        <img src="./images/training-session.jpg" alt="Training session">
+        <img src="./images/gym-action1.jpg" alt="Gym action">
+        <img src="./images/gym-action2.jpg" alt="Gym training">
+        <img src="./images/270245429-group-photo.jpg" alt="Championship belts photo">
+        <img src="./images/liam-ali-aliev-fight.jpg" alt="Liam celebrating at ONE Championship">
+        <img src="./images/quote-liam.jpeg" alt="Liam Nolan quote">
+        <img src="./images/timetable.jpg" alt="Class timetable">
+        <img src="./images/resized-image-20251105.jpeg" alt="Original timetable design">
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEOS -->
+  <section class="section-dark" style="background:#1a1a1a">
+    <div class="container">
+      <h2 class="section-title">Videos</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:24px">
+        <div>
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px">
+            <iframe src="https://www.youtube.com/embed/AsXAyFxfFik" title="Liam Nolan Muay Thai Pad Work | RAW ROUNDS" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p style="margin-top:10px;opacity:.8;font-size:.9rem">Muay Thai Pad Work — RAW ROUNDS</p>
+        </div>
+        <div>
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px">
+            <iframe src="https://www.youtube.com/embed/8mjuWQuKNkQ" title="WBC World Champion — Liam Nolan Pad Work | RAW ROUNDS" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p style="margin-top:10px;opacity:.8;font-size:.9rem">WBC Champion Pad Work — RAW ROUNDS</p>
+        </div>
+        <div>
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px">
+            <iframe src="https://www.youtube.com/embed/PhawGJgOkmY" title="Liam Nolan at PK Saenchai Gym Thailand" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p style="margin-top:10px;opacity:.8;font-size:.9rem">Training at PK Saenchai Gym, Thailand</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="./privacy-policy.html">Privacy Policy</a>
+      <a href="https://www.instagram.com/nolanmuaythai/" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/liam.nolan.31/" target="_blank">Facebook</a>
+    </div>
+    <p><strong>Nolan Muay Thai</strong></p>
+    <p>Contact: <a href="tel:07740961476">0774 0961476</a></p>
+    <p>Copyright &copy; 2025 Nolan Muay Thai – All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

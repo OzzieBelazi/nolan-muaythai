@@ -1,0 +1,21 @@
+{
+  "name": "Nolan Muay Thai",
+  "short_name": "Nolan MT",
+  "description": "Muay Thai, kickboxing & martial arts classes in Beckenham, South London. Train with WBC World Champion Liam Nolan.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#161616",
+  "theme_color": "#cd853f",
+  "icons": [
+    {
+      "src": "./images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

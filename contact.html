@@ -76,8 +76,9 @@
 </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link" style="position:absolute;top:-40px;left:0;background:#cd853f;color:#000;padding:8px 16px;z-index:9999;transition:top .3s">Skip to content</a>
 
-  <nav class="navbar">
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="./" class="nav-logo"><img src="./images/logo.png" alt="Nolan Muay Thai logo — martial arts gym in Beckenham, South London"></a>
       <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
@@ -94,6 +95,8 @@
       </ul>
     </div>
   </nav>
+
+  <main id="main-content">
 
   <section class="page-header">
     <h1>Contact Us</h1>
@@ -125,8 +128,8 @@
           <h4>Better yet, see us in person!</h4>
           <p>We love our customers, so feel free to visit during normal Gym hours.</p>
 
-          <a href="https://wa.me/447740961476" class="whatsapp-btn" target="_blank">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.336 0-4.512-.767-6.262-2.064l-.438-.338-2.648.888.888-2.649-.338-.437A9.936 9.936 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+          <a href="https://wa.me/447740961476" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.336 0-4.512-.767-6.262-2.064l-.438-.338-2.648.888.888-2.649-.338-.437A9.936 9.936 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
             Message us on WhatsApp
           </a>
 
@@ -148,18 +151,20 @@
           </table>
 
           <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2492.5!2d-0.0253!3d51.4089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876035c0b7b2e6f%3A0x9d9fa7f8e8e6e7a0!2s248%20High%20St%2C%20Beckenham%20BR3%201DZ!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk" allowfullscreen loading="lazy"></iframe>
+            <iframe title="Google Maps — Nolan Muay Thai at 248 High Street, Beckenham" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2492.5!2d-0.0253!3d51.4089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876035c0b7b2e6f%3A0x9d9fa7f8e8e6e7a0!2s248%20High%20St%2C%20Beckenham%20BR3%201DZ!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk" allowfullscreen loading="lazy"></iframe>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <footer>
+  </main>
+
+  <footer role="contentinfo">
     <div class="footer-links">
       <a href="./privacy-policy.html">Privacy Policy</a>
-      <a href="https://www.instagram.com/nolanmuaythai/" target="_blank">Instagram</a>
-      <a href="https://www.facebook.com/liam.nolan.31/" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/nolanmuaythai/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.facebook.com/liam.nolan.31/" target="_blank" rel="noopener noreferrer">Facebook</a>
     </div>
     <p><strong>Nolan Muay Thai</strong></p>
     <p>Contact: <a href="tel:07740961476">0774 0961476</a></p>

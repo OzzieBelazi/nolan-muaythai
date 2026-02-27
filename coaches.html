@@ -33,8 +33,9 @@
 </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link" style="position:absolute;top:-40px;left:0;background:#cd853f;color:#000;padding:8px 16px;z-index:9999;transition:top .3s">Skip to content</a>
 
-  <nav class="navbar">
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="./" class="nav-logo"><img src="./images/logo.png" alt="Nolan Muay Thai logo — martial arts gym in Beckenham, South London"></a>
       <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
@@ -51,6 +52,8 @@
       </ul>
     </div>
   </nav>
+
+  <main id="main-content">
 
   <section class="page-header">
     <h1>Coaches</h1>
@@ -150,11 +153,13 @@
     </div>
   </section>
 
-  <footer>
+  </main>
+
+  <footer role="contentinfo">
     <div class="footer-links">
       <a href="./privacy-policy.html">Privacy Policy</a>
-      <a href="https://www.instagram.com/nolanmuaythai/" target="_blank">Instagram</a>
-      <a href="https://www.facebook.com/liam.nolan.31/" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/nolanmuaythai/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.facebook.com/liam.nolan.31/" target="_blank" rel="noopener noreferrer">Facebook</a>
     </div>
     <p><strong>Nolan Muay Thai</strong></p>
     <p>Contact: <a href="tel:07740961476">0774 0961476</a></p>

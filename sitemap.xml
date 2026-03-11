@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://nolanmuaythai.com/</loc><lastmod>2026-03-11</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://nolanmuaythai.com/</loc><lastmod>2026-02-27</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://nolanmuaythai.com/about.html</loc><lastmod>2026-02-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://nolanmuaythai.com/coaches.html</loc><lastmod>2026-02-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://nolanmuaythai.com/junior-muay-thai.html</loc><lastmod>2026-02-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -8,14 +8,4 @@
   <url><loc>https://nolanmuaythai.com/gallery.html</loc><lastmod>2026-02-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://nolanmuaythai.com/contact.html</loc><lastmod>2026-02-27</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://nolanmuaythai.com/privacy-policy.html</loc><lastmod>2026-02-27</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <!-- Area landing pages -->
-  <url><loc>https://nolanmuaythai.com/areas/bromley.html</loc><lastmod>2026-03-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://nolanmuaythai.com/areas/west-wickham.html</loc><lastmod>2026-03-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://nolanmuaythai.com/areas/orpington.html</loc><lastmod>2026-03-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://nolanmuaythai.com/areas/penge.html</loc><lastmod>2026-03-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://nolanmuaythai.com/areas/crystal-palace.html</loc><lastmod>2026-03-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <!-- Kids area pages -->
-  <url><loc>https://nolanmuaythai.com/areas/kids-muay-thai-beckenham.html</loc><lastmod>2026-03-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://nolanmuaythai.com/areas/kids-muay-thai-bromley.html</loc><lastmod>2026-03-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://nolanmuaythai.com/areas/kids-muay-thai-south-london.html</loc><lastmod>2026-03-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

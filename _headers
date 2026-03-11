@@ -1,8 +1,14 @@
-https://nolan-muaythai.pages.dev/*
-  X-Robots-Tag: noindex, nofollow
-
+# Security headers for all pages
 /*
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
-  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://secure.ashbournemanagement.co.uk; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.google.com https://www.youtube.com; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com
+
+# Block Cloudflare Pages dev domain from being indexed
+# This prevents the duplicate canonical warning in Search Console
+https://nolan-muaythai.pages.dev/*
+  X-Robots-Tag: noindex, nofollow

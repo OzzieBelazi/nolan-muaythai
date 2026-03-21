@@ -22,14 +22,14 @@
   .sig-row .field { flex: 1; }
   .sig-row .field.date { max-width: 180px; }
   .small { font-size: 9pt; color: #666; text-align: center; margin-top: 30px; }
-  @media print { body { padding: 0; } .no-print { display: none; } @page { margin: 2cm; size: A4; } }
+  @media print { body { padding: 0; } .no-print { display: none !important; } @page { margin: 2cm; size: A4; } }
   .print-btn { display: block; margin: 0 auto 20px; padding: 10px 30px; font-size: 14px; cursor: pointer; background: #c0392b; color: #fff; border: none; border-radius: 4px; }
   .print-btn:hover { background: #e74c3c; }
 </style>
 </head>
 <body>
 
-<button class="print-btn no-print" onclick="window.print()">🖨️ Print / Save as PDF</button>
+<button class="print-btn no-print" onclick="window.print()">Print / Save as PDF</button>
 
 <h1>Nolan Muay Thai</h1>
 <p class="subtitle">Martial Arts Competition — Waiver Form</p>

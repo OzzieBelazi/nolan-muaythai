@@ -3,43 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nolan Muay Thai — Competition Waiver & Release Form</title>
+<title>Nolan Muay Thai — Waiver Form</title>
 <style>
-  @page { margin: 1.8cm; size: A4; }
+  @page { margin: 2cm; size: A4; }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 10.5pt; line-height: 1.45; color: #1a1a1a; max-width: 780px; margin: 0 auto; padding: 30px 25px; }
-  h1 { font-size: 19pt; text-align: center; margin-bottom: 2px; text-transform: uppercase; letter-spacing: 1.5px; }
-  .subtitle { text-align: center; font-size: 13pt; font-weight: 700; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
-  .event-line { text-align: center; font-size: 10pt; color: #444; margin-bottom: 16px; }
-  h2 { font-size: 11pt; margin: 14px 0 6px; text-transform: uppercase; border-bottom: 1.5px solid #222; padding-bottom: 2px; letter-spacing: 0.5px; }
-  p { margin-bottom: 5px; }
-  ol, ul { padding-left: 18px; margin-bottom: 5px; }
-  ol li, ul li { margin-bottom: 3px; }
-  .field { display: flex; align-items: baseline; margin-bottom: 8px; gap: 6px; }
-  .field label { white-space: nowrap; font-weight: 600; min-width: 145px; font-size: 10pt; }
-  .field .line { flex: 1; border-bottom: 1px solid #333; min-height: 16px; }
-  .field-row { display: flex; gap: 16px; }
+  body { font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 1.6; color: #111; max-width: 700px; margin: 0 auto; padding: 40px 30px; }
+  h1 { font-size: 22pt; text-align: center; margin-bottom: 4px; text-transform: uppercase; }
+  .subtitle { text-align: center; font-size: 12pt; margin-bottom: 24px; color: #333; }
+  h2 { font-size: 12pt; margin: 20px 0 10px; text-transform: uppercase; }
+  .field { margin-bottom: 14px; }
+  .field label { display: block; font-weight: bold; margin-bottom: 2px; font-size: 10pt; }
+  .field .line { width: 100%; border: none; border-bottom: 1px solid #333; height: 22px; display: block; }
+  .field-row { display: flex; gap: 20px; }
   .field-row .field { flex: 1; }
-  .field-3 { display: flex; gap: 12px; }
-  .field-3 .field { flex: 1; }
-  .checkbox-row { display: flex; align-items: flex-start; gap: 7px; margin-bottom: 6px; }
-  .checkbox { width: 13px; height: 13px; border: 1.5px solid #333; display: inline-block; flex-shrink: 0; margin-top: 2px; }
-  .section-note { font-size: 9pt; color: #555; font-style: italic; margin-bottom: 6px; }
-  .medical-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 16px; margin: 6px 0; }
-  .sig-block { margin-top: 20px; }
-  .sig-row { display: flex; gap: 24px; margin-bottom: 14px; }
+  .waiver-text { margin: 16px 0; text-align: justify; }
+  .sig-area { margin-top: 30px; }
+  .sig-row { display: flex; gap: 30px; margin-bottom: 18px; }
   .sig-row .field { flex: 1; }
-  hr { border: none; border-top: 2px solid #222; margin: 16px 0; }
-  .bold { font-weight: 700; }
-  .small { font-size: 9pt; color: #555; }
-  .center { text-align: center; }
-  @media print {
-    body { padding: 0; font-size: 10pt; }
-    .no-print { display: none; }
-  }
-  .print-btn { display: block; margin: 0 auto 16px; padding: 10px 28px; font-size: 14px; cursor: pointer; background: #c0392b; color: #fff; border: none; border-radius: 4px; font-weight: 600; }
+  .sig-row .field.date { max-width: 180px; }
+  .small { font-size: 9pt; color: #666; text-align: center; margin-top: 30px; }
+  @media print { body { padding: 0; } .no-print { display: none; } }
+  .print-btn { display: block; margin: 0 auto 20px; padding: 10px 30px; font-size: 14px; cursor: pointer; background: #c0392b; color: #fff; border: none; border-radius: 4px; }
   .print-btn:hover { background: #e74c3c; }
-  .initial-box { display: inline-block; width: 40px; border-bottom: 1px solid #333; margin-left: 4px; }
 </style>
 </head>
 <body>
@@ -47,137 +32,50 @@
 <button class="print-btn no-print" onclick="window.print()">🖨️ Print / Save as PDF</button>
 
 <h1>Nolan Muay Thai</h1>
-<p class="subtitle">Competition Waiver, Release & Assumption of Risk</p>
-<p class="event-line">Muay Thai Competition Event — Beckenham, South East London</p>
+<p class="subtitle">Martial Arts Competition — Waiver Form</p>
 
-<!-- EVENT DETAILS -->
-<h2>Event Details</h2>
+<h2>Participant Details</h2>
+<div class="field"><label>Full Name</label><div class="line"></div></div>
 <div class="field-row">
-  <div class="field"><label>Event Name:</label><div class="line"></div></div>
-  <div class="field"><label>Date:</label><div class="line"></div></div>
+  <div class="field"><label>Date of Birth</label><div class="line"></div></div>
+  <div class="field"><label>Phone</label><div class="line"></div></div>
 </div>
-<div class="field"><label>Venue:</label><div class="line"></div></div>
+<div class="field"><label>Email</label><div class="line"></div></div>
 
-<!-- COMPETITOR INFO -->
-<h2>1. Competitor Information</h2>
-<div class="field"><label>Full Name:</label><div class="line"></div></div>
-<div class="field-3">
-  <div class="field"><label>Date of Birth:</label><div class="line"></div></div>
-  <div class="field"><label>Age:</label><div class="line"></div></div>
-  <div class="field"><label>Gender:</label><div class="line"></div></div>
-</div>
-<div class="field"><label>Address:</label><div class="line"></div></div>
+<h2>Emergency Contact</h2>
+<div class="field"><label>Name</label><div class="line"></div></div>
 <div class="field-row">
-  <div class="field"><label>Phone:</label><div class="line"></div></div>
-  <div class="field"><label>Email:</label><div class="line"></div></div>
-</div>
-<div class="field-row">
-  <div class="field"><label>Gym / Team:</label><div class="line"></div></div>
-  <div class="field"><label>Coach Name:</label><div class="line"></div></div>
-</div>
-<div class="field-3">
-  <div class="field"><label>Weight Class:</label><div class="line"></div></div>
-  <div class="field"><label>Weight (kg):</label><div class="line"></div></div>
-  <div class="field"><label>Fight Record:</label><div class="line"></div></div>
+  <div class="field"><label>Relationship</label><div class="line"></div></div>
+  <div class="field"><label>Phone</label><div class="line"></div></div>
 </div>
 
-<!-- EMERGENCY CONTACT -->
-<h2>2. Emergency Contact</h2>
-<div class="field"><label>Contact Name:</label><div class="line"></div></div>
-<div class="field-row">
-  <div class="field"><label>Relationship:</label><div class="line"></div></div>
-  <div class="field"><label>Phone:</label><div class="line"></div></div>
+<h2>Medical Conditions</h2>
+<div class="field"><label>Please list any medical conditions, injuries, or allergies (write "None" if not applicable)</label><div class="line"></div></div>
+<div class="field"><div class="line"></div></div>
+
+<h2>Waiver & Release</h2>
+<div class="waiver-text">
+<p>I acknowledge that participation in this Muay Thai competition involves inherent risks of physical injury, including but not limited to bruises, fractures, concussion, and other serious injuries. I voluntarily assume all risks associated with my participation.</p>
+
+<p style="margin-top: 10px;">In consideration of being permitted to compete, I hereby release, waive, and discharge Nolan Muay Thai, its coaches, staff, officials, the venue, and all associated parties from any and all liability for injury, illness, or loss arising from my participation in this event, whether caused by negligence or otherwise.</p>
+
+<p style="margin-top: 10px;">I confirm that I am physically fit to compete, have disclosed all relevant medical conditions above, and agree to abide by the rules of the competition.</p>
+
+<p style="margin-top: 10px;">For participants under 18, a parent or legal guardian must sign below on their behalf.</p>
 </div>
 
-<!-- MEDICAL -->
-<h2>3. Medical Declaration</h2>
-<p class="section-note">Tick any conditions that apply. If none, write "None" in Details.</p>
-<div class="medical-grid">
-  <div class="checkbox-row"><span class="checkbox"></span> Heart condition</div>
-  <div class="checkbox-row"><span class="checkbox"></span> Asthma / breathing difficulties</div>
-  <div class="checkbox-row"><span class="checkbox"></span> Epilepsy / seizures</div>
-  <div class="checkbox-row"><span class="checkbox"></span> Diabetes</div>
-  <div class="checkbox-row"><span class="checkbox"></span> Joint / bone / back problems</div>
-  <div class="checkbox-row"><span class="checkbox"></span> Recent surgery or injury</div>
-  <div class="checkbox-row"><span class="checkbox"></span> Concussion history</div>
-  <div class="checkbox-row"><span class="checkbox"></span> Other (specify below)</div>
-</div>
-<div class="field"><label>Details / Medications:</label><div class="line"></div></div>
-
-<div class="checkbox-row" style="margin-top: 6px;"><span class="checkbox"></span> I confirm I have not been medically advised against competing and I am fit to participate in full-contact Muay Thai competition.</div>
-
-<!-- ASSUMPTION OF RISK -->
-<h2>4. Assumption of Risk</h2>
-<p>I acknowledge that participation in a <strong>Muay Thai competition</strong> involves serious and inherent risks of physical injury including but not limited to:</p>
-<ol>
-  <li>Bruises, lacerations, sprains, fractures, dislocations, and dental injuries.</li>
-  <li>Concussion, traumatic brain injury, and other head/neck trauma.</li>
-  <li>Internal injuries, joint damage, and ligament/tendon tears.</li>
-  <li>Cardiovascular events including cardiac arrest.</li>
-  <li>In rare cases, permanent disability or death.</li>
-</ol>
-<p>I understand these risks <strong>cannot be eliminated</strong> regardless of the care taken by the event organisers, officials, or medical staff present. I <strong>voluntarily assume full responsibility</strong> for all risks of injury, illness, or loss arising from my participation.</p>
-
-<!-- WAIVER & RELEASE -->
-<h2>5. Waiver & Release of Liability</h2>
-<p>In consideration of being permitted to compete, I hereby <strong>release, waive, and forever discharge</strong>:</p>
-<ul>
-  <li>Nolan Muay Thai, its owners, coaches, instructors, staff, and volunteers;</li>
-  <li>The event organisers, promoters, sponsors, and officials;</li>
-  <li>The venue owners and operators;</li>
-  <li>All other competitors and their coaches/corners;</li>
-</ul>
-<p>from any and all liability, claims, demands, causes of action, or damages arising out of or related to any injury, illness, death, or loss sustained during or as a result of the competition, including warm-up, weigh-in, the bout itself, and post-event activities, <strong>whether caused by negligence or otherwise</strong>.</p>
-<p>I agree <strong>not to bring any claim or legal action</strong> against the above parties in connection with any injury or loss sustained.</p>
-
-<!-- RULES & CONDUCT -->
-<h2>6. Rules & Conduct</h2>
-<div class="checkbox-row"><span class="checkbox"></span> I agree to abide by all competition rules and the decisions of the referee and judges.</div>
-<div class="checkbox-row"><span class="checkbox"></span> I understand I may be disqualified for unsportsmanlike conduct, failure to make weight, or violation of rules.</div>
-<div class="checkbox-row"><span class="checkbox"></span> I confirm I am not under the influence of alcohol, drugs, or any banned substance.</div>
-<div class="checkbox-row"><span class="checkbox"></span> I agree to submit to any drug/substance testing if required by the event organisers.</div>
-
-<!-- MEDIA CONSENT -->
-<h2>7. Photography & Media Consent</h2>
-<div class="checkbox-row"><span class="checkbox"></span> I consent to photographs, video, and audio recordings being taken during the event and used for promotion, social media, broadcast, and media coverage by Nolan Muay Thai and associated parties.</div>
-<div class="checkbox-row"><span class="checkbox"></span> I do <strong>NOT</strong> consent to photography/video/media use.</div>
-
-<!-- INSURANCE -->
-<h2>8. Insurance</h2>
-<p>I understand that Nolan Muay Thai and the event organisers <strong>do not provide personal accident or medical insurance</strong> for competitors. I am responsible for my own insurance coverage. I acknowledge that medical staff may be present but do not guarantee treatment beyond first aid.</p>
-
-<!-- UNDER 18 -->
-<h2>9. Competitors Under 18</h2>
-<p class="section-note">A parent or legal guardian must complete and sign this section.</p>
-<div class="field"><label>Parent/Guardian Name:</label><div class="line"></div></div>
-<div class="field"><label>Relationship:</label><div class="line"></div></div>
-<p>I confirm I am the parent/legal guardian of the above-named minor and give consent for them to compete. I accept the terms of this waiver on their behalf and acknowledge the risks described herein.</p>
-
-<hr>
-
-<!-- DECLARATION & SIGNATURE -->
-<h2>10. Declaration & Signature</h2>
-<p class="bold">I have read, understood, and agree to all sections of this Competition Waiver, Release & Assumption of Risk. I sign this form voluntarily and without duress. I confirm all information provided is true and accurate.</p>
-
-<div class="sig-block">
+<div class="sig-area">
   <div class="sig-row">
-    <div class="field"><label>Competitor Signature:</label><div class="line"></div></div>
-    <div class="field"><label>Date:</label><div class="line"></div></div>
+    <div class="field"><label>Participant Signature</label><div class="line"></div></div>
+    <div class="field date"><label>Date</label><div class="line"></div></div>
   </div>
   <div class="sig-row">
-    <div class="field"><label>Print Name:</label><div class="line"></div></div>
-  </div>
-  <div class="sig-row">
-    <div class="field"><label>Parent/Guardian Sig:</label><div class="line"></div></div>
-    <div class="field"><label>Date:</label><div class="line"></div></div>
-  </div>
-  <div class="sig-row">
-    <div class="field"><label>Coach Signature:</label><div class="line"></div></div>
-    <div class="field"><label>Date:</label><div class="line"></div></div>
+    <div class="field"><label>Parent/Guardian Signature (if under 18)</label><div class="line"></div></div>
+    <div class="field date"><label>Date</label><div class="line"></div></div>
   </div>
 </div>
 
-<p class="small center" style="margin-top: 16px;">This form will be retained by Nolan Muay Thai for the event record. For enquiries: nolanmuaythai.com</p>
+<p class="small">This form will be retained by Nolan Muay Thai. Contact: nolanmuaythai.com</p>
 
 </body>
 </html>

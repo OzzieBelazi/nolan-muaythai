@@ -1,0 +1,9 @@
+# Wrangler / Cloudflare build cache (contains local account state)
+.wrangler/
+
+# Raw source media — keep only the web-optimized exports under videos/ & images/
+NMT INTRO REEL*.mp4
+*.raw.mp4
+node_modules/
+.DS_Store
+Thumbs.db

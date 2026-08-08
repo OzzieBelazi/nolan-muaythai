@@ -141,7 +141,7 @@
         <div>
           <h3 style="color:#cd853f;margin-bottom:8px;font-size:1.3rem">Drop us a line for any further information!</h3>
           <p style="opacity:.7;margin-bottom:24px">Fields marked * are required.</p>
-          <form class="contact-form" onsubmit="event.preventDefault();alert('Thank you! We will be in touch.')">
+          <form class="contact-form" onsubmit="sendToWhatsApp(event)">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your name">
             <label for="email">Email *</label>
@@ -152,6 +152,21 @@
             <textarea id="message" name="message" placeholder="How can we help?"></textarea>
             <button type="submit" class="btn btn-gold" style="width:100%">Send Message</button>
           </form>
+          <script>
+            function sendToWhatsApp(event) {
+              event.preventDefault();
+              const form = event.target;
+              const lines = [
+                'New enquiry from website:',
+                `Name: ${form.name.value || '-'}`,
+                `Email: ${form.email.value || '-'}`,
+                `Phone: ${form.phone.value || '-'}`,
+                `Message: ${form.message.value || '-'}`
+              ];
+              const text = encodeURIComponent(lines.join('\n'));
+              window.open(`https://wa.me/447740961476?text=${text}`, '_blank', 'noopener,noreferrer');
+            }
+          </script>
         </div>
 
         <!-- INFO -->

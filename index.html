@@ -481,6 +481,7 @@
 
       <div class="btn-group" style="flex-direction:column;align-items:center;gap:20px;max-width:700px;margin:30px auto 0">
         <a href="https://secure.ashbournemanagement.co.uk/signupUK/index.aspx?fn=GREB9" class="btn btn-dark" style="width:100%;padding:18px 36px;font-size:1.05rem;color:#fff" target="_blank" rel="noopener noreferrer">Book Your Nolan Muay Thai Membership Package Here</a>
+        <a href="https://wa.me/447740961476?text=Hi%2C%20I%27d%20like%20to%20book%20a%20drop-in%20class%20(%C2%A315)" class="btn btn-outline" style="width:100%;padding:18px 36px;font-size:1.05rem" target="_blank" rel="noopener noreferrer" onclick="if(typeof gtag==='function'){gtag('event','dropin_click',{event_category:'enquiry',event_label:'homepage pricing'})}">Just want to try a class? Book a drop-in — £15</a>
       </div>
     </div>
   </section>
@@ -491,7 +492,7 @@
       <h2 class="section-title">Contact Us</h2>
       <div class="contact-grid">
         <div>
-          <form class="contact-form" onsubmit="event.preventDefault();alert('Thank you! We will be in touch.')">
+          <form class="contact-form" onsubmit="sendToWhatsApp(event)">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your name">
             <label for="email">Email *</label>
@@ -502,18 +503,36 @@
             <textarea id="notes" name="notes" placeholder="How can we help?"></textarea>
             <button type="submit" class="btn btn-gold" style="width:100%">Send</button>
           </form>
+          <script>
+            function sendToWhatsApp(event) {
+              event.preventDefault();
+              const form = event.target;
+              const lines = [
+                'New enquiry from website:',
+                `Name: ${form.name.value || '-'}`,
+                `Email: ${form.email.value || '-'}`,
+                `Phone: ${form.phone.value || '-'}`,
+                `Message: ${form.notes.value || '-'}`
+              ];
+              const text = encodeURIComponent(lines.join('\n'));
+              if (typeof gtag === 'function') {
+                gtag('event', 'contact_form_whatsapp', {event_category: 'enquiry', event_label: 'homepage form'});
+              }
+              window.open(`https://wa.me/447740961476?text=${text}`, '_blank', 'noopener,noreferrer');
+            }
+          </script>
         </div>
         <div class="contact-info">
           <h3>Better yet, see us in person!</h3>
           <p>We love our customers, so feel free to visit during normal Gym hours.</p>
-          <a href="https://wa.me/447740961476" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/447740961476" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'enquiry',event_label:'homepage contact section'})}">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.336 0-4.512-.767-6.262-2.064l-.438-.338-2.648.888.888-2.649-.338-.437A9.936 9.936 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
             Message us on WhatsApp
           </a>
           <br><br>
           <h3>Nolan Muay Thai</h3>
           <p>9-10 Goodwood Parade, Upper Elmers End Rd, Elmers End<br>Beckenham BR3 3QZ</p>
-          <p>Contact: <a href="tel:07740961476" style="color:#cd853f">0774 0961476</a></p>
+          <p>Contact: <a href="tel:07740961476" style="color:#cd853f" onclick="if(typeof gtag==='function'){gtag('event','phone_click',{event_category:'enquiry',event_label:'homepage contact section'})}">0774 0961476</a></p>
           <p>Email: <a href="mailto:Liamten@live.co.uk" style="color:#cd853f">Liamten@live.co.uk</a></p>
           <br>
           <h3>Gym Hours</h3>
@@ -540,7 +559,7 @@
       <a href="https://www.facebook.com/liam.nolan.31/" target="_blank" rel="noopener noreferrer">Facebook</a>
     </div>
     <p><strong>Nolan Muay Thai</strong></p>
-    <p>Contact: <a href="tel:07740961476">0774 0961476</a></p>
+    <p>Contact: <a href="tel:07740961476" onclick="if(typeof gtag==='function'){gtag('event','phone_click',{event_category:'enquiry',event_label:'homepage footer'})}">0774 0961476</a></p>
     <p>Email: <a href="mailto:Liamten@live.co.uk">Liamten@live.co.uk</a></p>
     <p>Copyright &copy; 2026 Nolan Muay Thai – All Rights Reserved.</p>
   </footer>

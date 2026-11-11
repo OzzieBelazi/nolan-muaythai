@@ -3,7 +3,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://nolanmuaythai.com/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-06-07</lastmod>
     <changefreq>weekly</changefreq><priority>1.0</priority>
     <video:video>
       <video:thumbnail_loc>https://nolanmuaythai.com/images/intro-reel-poster.jpg</video:thumbnail_loc>
@@ -62,7 +62,7 @@
     <video:video>
       <video:thumbnail_loc>https://nolanmuaythai.com/images/poster-clinch-technique.jpg</video:thumbnail_loc>
       <video:title>Clinch &amp; Elbow Technique Breakdown</video:title>
-      <video:description>A Muay Thai clinch and elbow technique breakdown filmed at Nolan Muay Thai in Beckenham, South East London.</video:description>
+      <video:description>Muay Thai clinch and elbow work at Nolan Muay Thai in Beckenham, South East London, cut together with competition footage of Liam Nolan.</video:description>
       <video:content_loc>https://nolanmuaythai.com/videos/clinch-technique-breakdown.mp4</video:content_loc>
       <video:duration>37</video:duration>
       <video:publication_date>2026-11-04T00:00:00+00:00</video:publication_date>
@@ -72,7 +72,7 @@
     <video:video>
       <video:thumbnail_loc>https://nolanmuaythai.com/images/poster-scissor-kick.jpg</video:thumbnail_loc>
       <video:title>How to Learn the Jumping Scissor Kick</video:title>
-      <video:description>Coaching breakdown of the jumping scissor kick at Nolan Muay Thai in Beckenham, South East London.</video:description>
+      <video:description>The jumping scissor kick, coached at Nolan Muay Thai in Beckenham, South East London and shown landing in competition.</video:description>
       <video:content_loc>https://nolanmuaythai.com/videos/jumping-scissor-kick.mp4</video:content_loc>
       <video:duration>34</video:duration>
       <video:publication_date>2026-11-04T00:00:00+00:00</video:publication_date>
@@ -102,7 +102,7 @@
     <video:video>
       <video:thumbnail_loc>https://nolanmuaythai.com/images/poster-sparring-rounds.jpg</video:thumbnail_loc>
       <video:title>Sparring Rounds</video:title>
-      <video:description>Controlled Muay Thai sparring rounds between members at Nolan Muay Thai in Beckenham, South East London.</video:description>
+      <video:description>Muay Thai sparring rounds at Nolan Muay Thai in Beckenham, South East London.</video:description>
       <video:content_loc>https://nolanmuaythai.com/videos/sparring-rounds.mp4</video:content_loc>
       <video:duration>19</video:duration>
       <video:publication_date>2026-11-04T00:00:00+00:00</video:publication_date>
